@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .navbar{
+    height: 10vh;
+    margin: 0 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* header .navbar .appname{
+    min-width: 360px;
+} */
+
+header .navbar .appname a{
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: .3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+header .navbar ul{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.8rem;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    min-width: 300px;
+}
+
+header .navbar ul li a{
+    color: white;
+}
+
+.container{
+    width: 100vw;
+    min-height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.24) , rgba(0, 0, 0, 0.514)) , url('../images/city.jpg');;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+}
+
+.container2{
+    width: 100vw;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main{
+    height: 85vh;
+    width: 100%;
+    background-image: url('../images/rain.png');
+    animation: rain .4s linear infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.container .main .welcome{
+    font-size: 2.3rem;
+    color: white;
+    text-align: center;
+    /* margin: 0 0 1rem .6rem; */
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+}
+
+.container .main h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-align: center;
+    width: 100%;
+    line-height: 6rem;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+}
+
+.container .main span{
+    color: blue;
+}
+
+.container .main button{
+    width: fit-content;
+    padding: 1.1rem;
+    border: none;
+    background-color: blue;
+    border-radius: 2rem;
+    box-shadow: 0 0 5rem white;
+    margin: 2rem auto;
+
+}
+
+.container .main button a{
+    color: white;
+    font-size: 1.8rem;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 10% 50%;
+    }
+    100% {
+        background-position: 20% 102%;
+    }
+}
+
+.container2 .search{
+    /* margin-top: 100px; */
+    background: #d2d0d07d;
+    height: 5vh;
+    width: 32vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 3px 2px 10px;
+    min-width: 300px;
+}
+
+.container2 .search #cityname{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 7px 10px;
+    width: 80%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container2 .search #searchbtn{
+    height: 100%;
+    width: 15%;
+    background: #0000ffba;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+h3{
+    font-size: 2rem;
+    color: rgb(129, 129, 129);
+}
+
+.container2 .output{
+    margin-top: 40px;
+    width: 25vw;
+    height: 45vh;
+    background: rgb(205 213 219 / 14%);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+.container2 .output .image{
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.container2 .output .image .condition{
+    text-align: center;
+}
+
+.container2 .output #temperature{
+    height: 10%;
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.container2 .output .allproperty{
+    height: 30%;
+    display: grid;
+    align-content: space-around;
+    justify-items: center;
+}
+
+.container2 .output .placedetail{
+    height: 10%;
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+footer{
+    height: 5vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 5vh;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+.containerabout{
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerabout p{
+    width: 50vw;
+}
+.containerabout img{
+    width: 25vw;
+    filter: drop-shadow(-7px 0px 39px black);
+}
+
+@media (max-width:550px) {
+    html{
+        font-size: 50%;
+    }
+    header .navbar .appname{
+        width: 100%;
+        text-align: center;
+    }
+    header .navbar ul{
+        width: 100%;
+        min-width: 0px;
+    }
+}
