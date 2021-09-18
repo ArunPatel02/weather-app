@@ -1,6 +1,6 @@
 {
   "name": "watherapp",
-  "homepage": "https://arunpatel02.github.io/weather-app.github.io/",
+  "homepage": "https://arunpatel02.github.io/weather-app/",
   "version": "1.0.0",
   "description": "this ia a weather app",
   "main": "app.js",
