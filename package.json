@@ -1,6 +1,6 @@
 {
   "name": "watherapp",
-  "homepage": "https://arunpatel02.github.io/weather-app/",
+  "homepage": "https://arunpatel02.github.io/weather-app.github.io/",
   "version": "1.0.0",
   "description": "this ia a weather app",
   "main": "app.js",
@@ -10,6 +10,7 @@
   "author": "arun",
   "license": "ISC",
   "dependencies": {
+    "build": "^0.1.4",
     "express": "^4.17.1",
     "hbs": "^4.1.2",
     "nodemon": "^2.0.12"
