@@ -1,13 +1,15 @@
+require('dotenv').config({path : '../.env'});
 const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const app = express();
+const cors = require('cors')
 
 
 const port = process.env.PORT || 3000;
 
 const publicpath =  path.join(__dirname , '../public'); // static express path of directory
-
+app.use(cors())
 app.use(express.urlencoded())
 
 //using handlebars
@@ -47,6 +49,7 @@ app.get("*", (req, res)=>{
     res.render('errorpage');
 })
 
+console.log(process.env.ARUN)
 
 app.listen(port , ()=>{
     console.log(`app is listing at http://localhost:${port}`);
